@@ -1,68 +1,20 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## React js Countdown Timer
 
-In the project directory, you can run:
+As with everybody else, I wanted to make sure I was being as proficient as possible with my study of React. I looked up Pomodoro timer but wanted to go deeper. I found a few different timer schedules that others had recommended and gave three of them a try. I tried the classic 25/5 min method, 90/120 min method and the 52/17 min method.
 
-### `npm start`
+### My Inspiration
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Some of the research I conducted led me to [Lifehacker](https://www.lifehacker.com.au/2014/08/52-minute-work-17-minute-break-is-the-ideal-productivity-schedule/) and [freelancing hacks](https://freelancinghacks.com/how-why-use-the-5217-rule-for-productivity/).<br />
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+I found for myself that 25 min was not long enough. I was just getting warmed up as the timer ticked to zero & the 90 min was too long. The perfect timer for me was the 52/17 min timer. So I had my timer now to make a cool app out of it to make my life easier and a bit of fun.
 
-### `npm test`
+### Problems that I ran into
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I had tried this before but I had used setInterval and after testing and more research found out this was the wrong way to go about it as the count was off. With this version, I used Date with setInterval. It is actually on time now. So that’s a plus.<br />
 
-### `npm run build`
+I came undone when I tried to get the gif in the background to sit nice. A quick web search found some awesome documentation. I use the same site for other CSS hints but the CSS Tricks site is awesome. A very handy resource. [css-tricks.com](https://css-tricks.com/perfect-full-page-background-image/)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Version 1 complete
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+I have a version that works and I am going to use for a while to test it out and make notes on how to improve it. I have a few ideas but want to use it for a week first just to make sure.
