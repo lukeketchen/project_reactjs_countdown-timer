@@ -96,11 +96,6 @@ class Countdown extends React.Component {
             <span className="coldtimer">17</span> Timer
           </h1>
           {this.state.currentMode ? (
-            <h2 className="activetimer">52</h2>
-          ) : (
-            <h2 className="coldtimer">17</h2>
-          )}
-          {this.state.currentMode ? (
             <h2 className="activetimer">{this.state.currentTime}</h2>
           ) : (
             <h2 className="coldtimer">{this.state.currentTime}</h2>
