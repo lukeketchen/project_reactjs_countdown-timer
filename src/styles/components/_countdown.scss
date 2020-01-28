@@ -42,7 +42,7 @@
   clip-path: circle(50%);
 }
 
-@media only screen and (max-width: $desktop-breakpoint) {
+@media screen and (max-width: $desktop-breakpoint) {
   .countdown h1 {
     font-size: $s-size;
     margin: $s-size;

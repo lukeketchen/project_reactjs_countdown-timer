@@ -7,7 +7,7 @@ class Countdown extends React.Component {
     super();
     this.state = {
       currentTime: "00:00",
-      timerTime: 1,
+      timerTime: 52,
       timerState: false,
       stoppedState: false,
       currentMode: true
@@ -63,9 +63,9 @@ class Countdown extends React.Component {
 
   getCurrentMode = () => {
     if (this.state.currentMode) {
-      return 1;
+      return 52;
     } else {
-      return 2;
+      return 17;
     }
   };
 
