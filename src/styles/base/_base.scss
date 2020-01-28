@@ -1,0 +1,22 @@
+html {
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: url("../../assets/images/bg-mario.gif") no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+button {
+  cursor: pointer;
+  color: $text-main;
+}
+
+button:disabled {
+  cursor: default;
+  color: grey;
+}

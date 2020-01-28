@@ -1,0 +1,64 @@
+.countdown {
+  color: $text-main;
+  border-radius: $xl-size;
+  margin: $xl-size;
+  // background: $bg-card;
+}
+.timersdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: $m-size;
+}
+
+.buttonsdiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.activetimer {
+  color: $bg-main;
+}
+.coldtimer {
+  color: $text-cold;
+}
+.countdown button {
+  background-color: $bg-button;
+  border: none;
+  margin: $s-size;
+  height: $xl-size;
+  width: $xxl-size;
+  border-radius: $s-size;
+  font-size: $m-size;
+}
+
+.circleanimation {
+  clip-path: circle(75%);
+  transition: clip-path 1s;
+}
+.circleanimation:hover {
+  clip-path: circle(50%);
+}
+
+@media only screen and (max-width: $desktop-breakpoint) {
+  .countdown h1 {
+    font-size: $s-size;
+    margin: $s-size;
+  }
+  .countdown h2 {
+    margin: $xs-size;
+    font-size: $s-size;
+  }
+  .timersdiv {
+    font-size: $s-size;
+  }
+  .countdown button {
+    margin: $xs-size;
+    height: $m-size;
+    width: cover;
+    border-radius: $s-size;
+    font-size: $s-size;
+  }
+}

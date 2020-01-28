@@ -49,7 +49,7 @@ class Countdown extends React.Component {
             currentMode: !prevState.currentMode
           }));
         }
-      }, 1000);
+      }, 100);
     } else {
       clearInterval(this.timer);
       this.timer = -1;
@@ -82,27 +82,57 @@ class Countdown extends React.Component {
   handleReset = () => {
     this.setState({
       timerTime: 1,
-      currentMode: true
+      currentMode: true,
+      stoppedState: false
     });
   };
 
   render() {
     return (
-      <div>
-        <h1>Timer Div</h1>
-        {this.state.currentMode ? <h2>52</h2> : <h2>17</h2>}
-        <h2>{this.state.currentTime}</h2>
-        {this.state.timerState ? (
-          <button disabled>START</button>
-        ) : (
-          <button onClick={() => this.startTimer()}>START</button>
-        )}
-        <button onClick={this.stopTimer}>STOP</button>
-        {this.state.stoppedState ? (
-          <button onClick={this.handleReset}>RESET</button>
-        ) : (
-          <button disabled>RESET</button>
-        )}
+      <div className="countdown">
+        <div className="timersdiv">
+          <h1>
+            <span className="activetimer">52</span> /{" "}
+            <span className="coldtimer">17</span> Timer
+          </h1>
+          {this.state.currentMode ? (
+            <h2 className="activetimer">52</h2>
+          ) : (
+            <h2 className="coldtimer">17</h2>
+          )}
+          {this.state.currentMode ? (
+            <h2 className="activetimer">{this.state.currentTime}</h2>
+          ) : (
+            <h2 className="coldtimer">{this.state.currentTime}</h2>
+          )}
+        </div>
+        <div className="buttonsdiv">
+          {this.state.timerState ? (
+            <button disabled>START</button>
+          ) : (
+            <button
+              className="circleanimation"
+              onClick={() => this.startTimer()}
+            >
+              START
+            </button>
+          )}
+          {this.state.timerState ? (
+            <button className="circleanimation" onClick={this.stopTimer}>
+              STOP
+            </button>
+          ) : (
+            <button disabled>STOP</button>
+          )}
+
+          {this.state.stoppedState ? (
+            <button className="circleanimation" onClick={this.handleReset}>
+              RESET
+            </button>
+          ) : (
+            <button disabled>RESET</button>
+          )}
+        </div>
       </div>
     );
   }
